@@ -30,15 +30,15 @@ const CardPrimary = ({ title, image, description,onClick }: props) => {
             alt="Image"
             width={400}
             height={100}
-            className="w-full h-full object-cover dark:brightness-[0.2] dark:grayscale"
+            className="w-full h-full object-fit dark:brightness-[0.2] dark:grayscale"
           />
         </div>
       </CardContent>
-      <CardDescription className="text-center w-[450px] pb-4 px-4">
+      <CardDescription className="text-center w-[450px] mb-4 px-4">
         {description}
       </CardDescription>
       <CardFooter>
-        <Button className="w-full  bg-green-900 text-white hover:bg-green-950" onClick={onClick}>
+        <Button className="w-full  bg-green-900 text-white hover:bg-green-950 mt-4" onClick={onClick}>
           <CheckIcon className="mr-2 h-4 w-4" /> Continue
         </Button>
       </CardFooter>

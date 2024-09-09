@@ -21,13 +21,9 @@ export const Summary = ({ formData, submitForm, prevStep }: any) => {
         <div className="grid grid-flow-row gap-4 mb-6">
           <table id="summary-table" className="w-full my-5 table text-sm">
             <tbody className="xs:w-full">
-              <tr className="bg-gray-100 h-[35px]">
+              <tr className="bg-gray-50 h-[35px]">
                 <td className="font-medium">Health Facility Name</td>
                 <td>{formData?.name}</td>
-              </tr>
-              <tr className="bg-gray-50 h-[35px]">
-                <td className="font-medium">Health Facility Type</td>
-                <td>{formData?.type}</td>
               </tr>
               <tr className="bg-gray-100 h-[35px]">
                 <td className="font-medium">Email</td>
@@ -56,10 +52,6 @@ export const Summary = ({ formData, submitForm, prevStep }: any) => {
               <tr className="bg-gray-100 h-[35px]">
                 <td className="font-medium">Tax Identification Number</td>
                 <td>{formData?.tax_id_number}</td>
-              </tr>
-              <tr className="bg-gray-50 h-[35px]">
-                <td className="font-medium">Business Registration</td>
-                <td>{formData?.business_registration_number}</td>
               </tr>
             </tbody>
           </table>
